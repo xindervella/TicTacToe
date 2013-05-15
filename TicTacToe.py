@@ -283,7 +283,7 @@ class Critic:
                     if self.board.getWinner(history[len(history)-1]) == 0:
                         trainingExamples.append([self.updater.getFeatures(history[i]), 0])
                     else:
-                        trainingExamples.append([self.updater.getFeatures(history[i]), -100])
+                        trainingExamples.append([self.updater.getFeatures(history[i]), 0])
                 else:
                     trainingExamples.append([self.updater.getFeatures(history[i]), self.updater.evaluate(history[i+2])])
         return trainingExamples
