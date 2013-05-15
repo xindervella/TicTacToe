@@ -146,7 +146,6 @@ class PerformanceSystem:
     def __init__(self, board, weight, player):
         self.board = board
         self.player = player
-        self.history = []
         self.weight = weight
 
     def setWeight(self, weight):
@@ -160,9 +159,6 @@ class PerformanceSystem:
 
     def getBoard(self, board):
         return self.board
-
-    def getHistory(self):
-        return self.history
 
     def getNextMove(self, player):
         possibilitys = []
@@ -361,9 +357,9 @@ for i in xrange(0, 6000):
     #generalizer2.updateWeights(board.getHistory(), critic2.getTrainingExample(board.getHistory()))
 
 print 'player1 win: ' + str(player1wins)
-print player1.getWeight()
+#print player1.getWeight()
 print 'player2 win: ' + str(player2wins)
-print player2.getWeight()
+#print player2.getWeight()
 print 'draw: ' + str(draws)
 
 while True:
