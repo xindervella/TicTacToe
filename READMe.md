@@ -25,7 +25,7 @@ Tic Tac Toe
 
 这样得到了目标函数：
 
-  Vest( b ) = w0 + w1*x1 + w2*x2 + w3*x3 + w4*x4 + w5*x5 + w6*x6
+      Vest( b ) = w0 + w1*x1 + w2*x2 + w3*x3 + w4*x4 + w5*x5 + w6*x6
 
 * * *
 
@@ -43,7 +43,7 @@ successor( b ) 表示程序走了一步，对手回应一步之后的棋局
 
 然后用LMS更新法则更新 wi
 
-  wi = wi + n * ( Vtrain( b ) - Vest( b ) * xi    n是用来调整 wi 更新幅度的一个小常数。
+      wi = wi + n * ( Vtrain( b ) - Vest( b ) * xi        n是用来调整 wi 更新幅度的一个小常数。
   
 * * *
 
